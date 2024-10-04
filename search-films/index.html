@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Search Films</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half notification is-primary tutorial">
+                    <h1 class="title">Search for a film on both sides</h1>
+                    <p class="subtitle">We will tell you which is the best!</p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div id="left-autocomplete"></div>
+                    <div class="left-summary"></div>
+                </div>
+                <div class="column">
+                    <div id="right-autocomplete"></div>
+                    <div class="right-summary"></div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://kit.fontawesome.com/167d24c076.js" crossorigin="anonymous" defer></script>
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>

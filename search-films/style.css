@@ -1,0 +1,36 @@
+*,
+*:after,
+*:before {
+	outline: 0;
+}
+label {
+	cursor: pointer;
+}
+input {
+	box-shadow: none !important;
+}
+body {
+	min-height: 100vh;
+	background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+.dropdown.is-active .results {
+	max-height: 30rem;
+	overflow-y: scroll;
+}
+.dropdown,
+.dropdown-menu {
+	width: 100%;
+}
+.tutorial {
+	margin: auto;
+}
+.results .dropdownItem {
+	margin-bottom: 1rem;
+}
+.results .image {
+	max-width: 64px;
+}
+#left-autocomplete,
+#right-autocomplete {
+	margin-bottom: 1.5rem;
+}

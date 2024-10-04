@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Secret Message Mini App in Vanilla JS</title>
+</head>
+<body class="blue-grey lighten-5">
+    <div class="row" style="margin-top: 25vh;">
+        <div class="col s8 offset-s2">
+
+            <div id="messageShow" class="card-panel hoverable hide">
+                <h1 style="word-break: break-word;"></h1>
+                <div>
+                    <a href="index.html">Create your own secret message</a>
+                </div>
+            </div>
+
+            <div id="messageForm" class="card-panel hoverable">
+                <form id="messageForm">
+                    <div class="input-field">
+                        <input id="messageInput" type="text">
+                        <label for="messageInput">Enter a Secret Message</label>
+                    </div>
+                    <button class="btn waves-effect waves-light ">
+                        Create
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+
+            <div id="linkForm" class="card-panel hoverable hide">
+                <div>
+                    Share this link with a friend
+                    <input type="text" id="linkInput" value="">
+                    <span class="grey-text">Copy this url and paste into new browser tab/window to decrypt it</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <script src="index.js"></script>
+</body>
+</html>
