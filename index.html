@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Mini Projects | Kunal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      color: #222;
+    }
+    header p {
+      font-size: 1rem;
+      color: #666;
+    }
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .project-card a:hover {
+      color: #005999;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .github-icon {
+      margin-top: 0.5rem;
+    }
+    .github-icon img {
+      width: 28px;
+      height: 28px;
+      vertical-align: middle;
+      transition: transform 0.2s;
+    }
+    .github-icon img:hover {
+      transform: scale(1.15);
+    }
+    @media (min-width: 600px) {
+      .project-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💻 JavaScript Projects</h1>
+    <p>Collections of JS "baby apps"</p>
+  </header>
+
+  <main>
+    <div class="project-list">
+      <div class="project-card"><a href="randomColor/index.html" target="_blank">🎨 Random Color Generator</a></div>
+      <div class="project-card"><a href="search-films/index.html" target="_blank">🎬 Search & Compare Films</a></div>
+      <div class="project-card"><a href="text-to-speech/index.html" target="_blank">🗣️ Text-to-Speech App</a></div>
+      <div class="project-card"><a href="weather/index.html" target="_blank">🌤️ Weather App</a></div>
+      <div class="project-card"><a href="counter/index.html" target="_blank">🔢 Counter App</a></div>
+      <div class="project-card"><a href="reviews/index.html" target="_blank">📝 Review Slider</a></div>
+      <div class="project-card"><a href="message/index.html" target="_blank">💬 Secret Message </a></div>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kunal Pawar
+    <div class="github-icon">
+      <a href="https://github.com/kunald08" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
